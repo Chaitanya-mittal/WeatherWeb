@@ -4,9 +4,9 @@ import { lazy, Suspense } from "react";
 
 const LandingPage = lazy(() => import("./screens/LandingPage/LandingPage"));
 const AppLayout = lazy(() => import("./screens/AppLayout/AppLayout"));
-const Contact = lazy(() => import("./screens/Contact"));
-const Authenticate = lazy(() => import("./screens/Authenticate"));
-const About = lazy(() => import("./screens/About"));
+const Contact = lazy(() => import("./screens/Contact/Contact"));
+const Authenticate = lazy(() => import("./screens/Authenticate/Authenticate"));
+const About = lazy(() => import("./screens/About/About"));
 
 import BookmarkProvider from "./context/BookmarkProvider";
 import BookmarkList from "./components/BookmarkList/BookmarkList";
@@ -14,7 +14,7 @@ import Bookmark from "./components/Bookmark/Bookmark";
 import CountryList from "./components/CountryList/CountryList";
 import WeatherDash from "./components/WeatherDash/WeatherDash";
 import ListedWeather from "./components/ListedWeather/ListedWeather";
-
+import Spinner from "./components/Spinners/Spinner";
 import UserProvider from "./context/UserProvider";
 
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
@@ -23,7 +23,7 @@ function App() {
     <BookmarkProvider>
       <UserProvider>
         <BrowserRouter forceRefresh={true}>
-          <Suspense fallback={<Loader />}>
+          <Suspense fallback={<Spinner />}>
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/about" element={<About />} />
