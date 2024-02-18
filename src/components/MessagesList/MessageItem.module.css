@@ -1,0 +1,9 @@
+.messageBox {
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}

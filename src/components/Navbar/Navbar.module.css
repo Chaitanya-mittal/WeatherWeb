@@ -1,0 +1,60 @@
+.nav {
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--color1);
+}
+
+.navbarItems {
+  /* position: sticky; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+
+.navbarItems li {
+  background-color: transparent;
+  transition: all;
+  font-weight: bold;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.navbarItems li:hover {
+  text-decoration: underline;
+}
+
+.navbarItems :global(.active) {
+  color: black;
+  font-weight: 600;
+  font-size: var(--h5);
+  text-decoration: underline;
+}
+
+.navLink {
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: var(--h6);
+}
+
+@media screen and (min-width: 450px) {
+  .nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .navbarItems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 300px) {
+}

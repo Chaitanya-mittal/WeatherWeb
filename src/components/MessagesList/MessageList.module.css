@@ -1,0 +1,16 @@
+.messageHeading {
+  text-align: center;
+  font-weight: 100;
+  background-color: rgb(229, 229, 229);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.messageList {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 3rem auto;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: scroll;
+}

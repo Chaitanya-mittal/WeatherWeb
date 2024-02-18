@@ -1,0 +1,8 @@
+.countryTab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--style1);
+  flex-flow: row wrap-reverse;
+  gap: 1rem;
+}

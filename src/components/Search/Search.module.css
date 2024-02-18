@@ -1,0 +1,14 @@
+.searchForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.searchForm input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: var(--p);
+  border-radius: none;
+  border: none;
+}

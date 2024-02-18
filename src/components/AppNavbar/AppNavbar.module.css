@@ -1,0 +1,17 @@
+.appNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  overflow-y: auto;
+}
+
+.links {
+  padding: 5px 10px;
+  background-color: rgb(232, 219, 219);
+  margin: 5px 0;
+}
+
+.appNavbar :global(.active) {
+  background-color: rgb(183, 166, 166);
+}

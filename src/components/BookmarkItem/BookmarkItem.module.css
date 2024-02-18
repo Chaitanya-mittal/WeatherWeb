@@ -1,0 +1,43 @@
+.bmBox {
+  position: relative;
+}
+.bookmarkItem {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+}
+
+.bin {
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  z-index: 10;
+  background-color: var(--color1);
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+.item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--small);
+  flex-flow: row wrap;
+}
+
+.item div span:first-child {
+  font-family: var(--style3);
+  font-size: var(--p);
+  font-weight: 500;
+}
+
+.item div span:last-child {
+  font-size: var(--h6);
+}
+
+.bookmarkItem p {
+  font-family: var(--style1);
+}

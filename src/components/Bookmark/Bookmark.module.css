@@ -1,0 +1,24 @@
+.bookmark {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(232, 219, 219);
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: var(--style3);
+}
+
+.bookmark h5 {
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--style2);
+  font-weight: bold;
+}
+
+.bookmark p span {
+  font-weight: bold;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-family: var(--style1);
+}

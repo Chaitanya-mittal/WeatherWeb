@@ -1,0 +1,49 @@
+.main {
+  margin: 7rem 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.formField {
+  margin: 2rem 0;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formField label {
+  width: 80px;
+  font-weight: 600;
+  font-family: var(--style1);
+  font-size: var(--h6);
+  letter-spacing: 2px;
+}
+
+.input {
+  border: none;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  outline: none;
+  outline-offset: 1px;
+  outline-width: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 650px) {
+  .main {
+    max-width: 600px;
+    margin: 7rem auto;
+  }
+  .formField {
+    flex-direction: row;
+    grid: 1;
+  }
+}

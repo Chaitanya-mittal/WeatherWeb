@@ -1,0 +1,81 @@
+.contactSection {
+  width: 100vw;
+}
+.main {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+}
+.contactIntro {
+  text-align: center;
+  font-family: var(--style1);
+  margin: 1rem auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto;
+}
+.socials [class*="fa-"] {
+  font-size: var(--h1);
+  transition: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.socials [class*="fa-"]:hover {
+  color: gray;
+}
+
+.form {
+  margin: 5rem 0;
+}
+
+.formField {
+  margin: 2rem 0;
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formField label {
+  width: 80px;
+  font-weight: 600;
+  font-family: var(--style1);
+  font-size: var(--h6);
+  letter-spacing: 2px;
+}
+
+.input {
+  border: none;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  outline: none;
+  outline-offset: 1px;
+  outline-width: 5px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btnBox {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+@media screen and (min-width: 650px) {
+  .main {
+    max-width: 600px;
+    margin: auto;
+  }
+  .formField {
+    flex-direction: row;
+    grid: 1;
+  }
+}
