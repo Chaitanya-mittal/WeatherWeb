@@ -9,7 +9,7 @@ function useCityToCoords() {
       setError();
       setLoading(true);
       const res = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c53863ec3574c2f30336dbcf7bef0d50`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=c53863ec3574c2f30336dbcf7bef0d50`
       );
 
       const fetchedData = await res.json();
